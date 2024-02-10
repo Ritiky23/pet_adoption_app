@@ -46,7 +46,7 @@ class _HomePageState extends State<HomePage> {
           _currentIndex == 0
               ? _buildAvailablePetsSliver()
               : _currentIndex == 1
-                  ? _buildHomeSliver() // Display the home screen when the middle tab is selected
+                  ? _buildHomeSliver()
                   : _buildAdoptedPetsSliver(),
         ],
       ),
@@ -128,7 +128,7 @@ class _HomePageState extends State<HomePage> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.asset('assets/petss.png', width: 200, height: 200), // Replace 'your_image.png' with your image asset
+          Image.asset('assets/petss.png', width: 200, height: 200),
           SizedBox(height: 20),
           Text(
             'Adopt Pet',
@@ -391,7 +391,7 @@ class _HomePageState extends State<HomePage> {
 
   void adoptPet(Pet pet) {
     setState(() {
-      adoptedPets.insert(0, pet); // Add the newly adopted pet to the beginning of the list
+      adoptedPets.insert(0, pet);
       availablePets.remove(pet);
     });
   }

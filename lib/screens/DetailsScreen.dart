@@ -6,14 +6,14 @@ class DetailsPage extends StatelessWidget {
   final Pet pet;
   final List<Pet> availablePets;
   final List<Pet> adoptedPets;
-  final Function(Pet) updateLists; // Modify this line
+  final Function(Pet) updateLists;
 
   const DetailsPage({
     Key? key,
     required this.pet,
     required this.availablePets,
     required this.adoptedPets,
-    required this.updateLists, // Modify this line
+    required this.updateLists,
   }) : super(key: key);
   
   
@@ -104,7 +104,7 @@ class DetailsPage extends StatelessWidget {
                             );
                           },
                           style: ElevatedButton.styleFrom(
-                            primary: Colors.yellow, // Set button color here
+                            primary: Colors.yellow,
                           ),
                           child: Text('Adopt Me',style: TextStyle(color: Color.fromARGB(255, 0, 0, 0),),),
                         ),
@@ -129,7 +129,7 @@ class DetailsPage extends StatelessWidget {
           Container(
             padding: EdgeInsets.all(10),
             decoration: BoxDecoration(
-              color: Colors.blue, // You can change the color here
+              color: Colors.blue, 
               borderRadius: BorderRadius.circular(20),
             ),
             child: Text(
