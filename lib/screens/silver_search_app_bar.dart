@@ -25,34 +25,49 @@ class SliverSearchAppBar extends SliverPersistentHeaderDelegate {
           height: 280,
         ),
         Positioned(
-          top: topPadding + offset,
+          top: 38 +offset,
           left: 16,
           right: 16,
-          child: Container(
-            padding: EdgeInsets.symmetric(horizontal: 16),
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(20), // Adjust the radius as needed
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.5),
-                  spreadRadius: 2,
-                  blurRadius: 7,
-                  offset: Offset(0, 3),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Text(
+                'Pet Adoption', // Add the Text widget with "Pet Adoption"
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
                 ),
-              ],
-            ),
-            child: TextFormField(
-              decoration: InputDecoration(
-                hintText: 'Search',
-                hintStyle: TextStyle(color: Colors.grey),
-                border: InputBorder.none,
-                prefixIcon: Icon(Icons.search),
               ),
-              onChanged: (value) {
-                onSearch(value); // Call the provided callback with the search query
-              },
-            ),
+              SizedBox(height: 16), // Add some space between the Text and the search bar
+              Container(
+                padding: EdgeInsets.symmetric(horizontal: 16),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(20), // Adjust the radius as needed
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.5),
+                      spreadRadius: 2,
+                      blurRadius: 7,
+                      offset: Offset(0, 3),
+                    ),
+                  ],
+                ),
+                child: TextFormField(
+                  decoration: InputDecoration(
+                    hintText: 'Search',
+                    hintStyle: TextStyle(color: Colors.grey),
+                    border: InputBorder.none,
+                    prefixIcon: Icon(Icons.search),
+                  ),
+                  onChanged: (value) {
+                    onSearch(value); // Call the provided callback with the search query
+                  },
+                ),
+              ),
+            ],
           ),
         ),
       ],

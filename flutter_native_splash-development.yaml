@@ -1,0 +1,9 @@
+flutter_native_splash:
+  color: "#cac0fe"
+  image: assets/petss.png
+  android: true
+  fullscreen: true
+  android_12:
+    image: assets/petss.png
+    icon_background_color: "#cac0fe"
+  web: false

@@ -56,7 +56,7 @@ class DetailsPage extends StatelessWidget {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20.0),
                     image: DecorationImage(
-                      image: AssetImage('assets/bck1.jpg'),
+                      image: AssetImage('assets/bck2.jpg'),
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -106,7 +106,7 @@ class DetailsPage extends StatelessWidget {
                           style: ElevatedButton.styleFrom(
                             primary: Colors.yellow, // Set button color here
                           ),
-                          child: Text('Adopt Me'),
+                          child: Text('Adopt Me',style: TextStyle(color: Color.fromARGB(255, 0, 0, 0),),),
                         ),
                       ],
                     ),
