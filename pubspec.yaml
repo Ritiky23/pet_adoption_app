@@ -1,0 +1,38 @@
+name: pet_adoption_app
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  convex_bottom_bar: ^3.2.0
+  font_awesome_flutter: ^10.6.0
+  flutter_vector_icons: ^2.0.0
+  google_fonts: ^6.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/cat1.jpg
+    - assets/cat2.jpg
+    - assets/cat3.jpg
+    - assets/dog4.jpg
+    - assets/dog1.jpg
+    - assets/dog2.jpg
+    - assets/icon1.png
+    - assets/dog3.jpg
+    - assets/dog4.jpg
+    - assets/rabbit1.jpg
+    - assets/rabbit2.jpg
+    - assets/bck1.jpg
+    - assets/bck2.jpg
+    - assets/bck3.png
