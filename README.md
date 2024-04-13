@@ -19,18 +19,23 @@
 <font face="Arial">Screenshots</font>
 
 <p align="center">
-  <img src="acreenshots/1.jpg" alt="Screenshot 1"/>
+  <img src="screenshot/12.jpg" alt="Screenshot 1"/>
 </p>
 <p align="center">
-  <img src="screenshots/2.jpg" alt="Screenshot 2"/>
+  <img src="screenshot/13.jpg" alt="Screenshot 2"/>
 </p>
-
 <p align="center">
-  <img src="screenshots/3.jpg" alt="Screenshot 3"/>
+  <img src="screenshot/14.jpg" alt="Screenshot 3"/>
+</p>
+<p align="center">
+  <img src="screenshot/15.jpg" alt="Screenshot 3"/>
+</p>
+<p align="center">
+  <img src="screenshot/16.jpg" alt="Screenshot 3"/>
 </p>
 
 ## Installation
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/pet-adoption-app.git
+   git clone https://github.com/Ritiky23/pet_adoption_app.git
